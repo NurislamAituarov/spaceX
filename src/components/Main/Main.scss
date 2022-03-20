@@ -60,6 +60,7 @@ section {
   grid-template-columns: 185px 185px;
   gap: 20px;
   .block {
+    cursor: pointer;
     height: 185px;
     padding: 35px 10px;
     text-align: center;
@@ -122,7 +123,6 @@ section {
     display: none;
   }
 }
-
 @media (max-width: 767px) {
   .main__title {
     height: 137px;

@@ -2,66 +2,53 @@ import './Main.scss';
 import { useEffect, useState } from 'react';
 
 import figure from '../../image/figure.png';
-import client from '../../sanity';
+import { getResource } from '../../api';
 
 export default function Main() {
   const [state, setState] = useState();
+  const [block, setBlock] = useState();
 
   useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "post"]{
-       title,
-       slug,
-       body,
-       mainImage{
-         asset -> {
-           _id,
-           url
-         },
-         alt
-       }
-     }`,
-      )
-      .then((data) => {
-        const item = {
-          title: data[0].title,
-          subtitle: data[0].slug.current,
-        };
-        setState(item);
-      });
+    getResource().then((data) => {
+      setState(data);
+      setBlock(data[2].slug.current.split(','));
+    });
   }, []);
 
   return (
     <main className="main flex">
-      <div className="main__title">
-        <h1>{state && state.title}</h1>
-        <p>{state && state.subtitle}</p>
-        <button>Начать путешествие</button>
-        <img className="figure" src={figure} alt="фигура" />
-      </div>
-      <section>
-        <div tabIndex={1} className="block">
-          <p>мы</p>
-          <h2>1</h2>
-          <p>на рынке</p>
+      {state && (
+        <div className="main__title">
+          <h1>{state[1].title}</h1>
+          <p>{state[1].slug.current}</p>
+          <button>{state[0].title}</button>
+          <img className="figure" src={figure} alt="фигура" />
         </div>
-        <div tabIndex={1} className="block">
-          <p>гарантируем</p>
-          <h2>50%</h2>
-          <p>безапасности</p>
-        </div>
-        <div tabIndex={1} className="block">
-          <p>календарик за</p>
-          <h2>2001г.</h2>
-          <p>в подарок</p>
-        </div>
-        <div tabIndex={1} className="block">
-          <p>путешествие</p>
-          <h2>597</h2>
-          <p>дней</p>
-        </div>
-      </section>
+      )}
+      {block && (
+        <section>
+          <div tabIndex={1} className="block">
+            <p>мы</p>
+            <h2>{block[0]}</h2>
+            <p>на рынке</p>
+          </div>
+          <div tabIndex={1} className="block">
+            <p>гарантируем</p>
+            <h2>{block[1]}</h2>
+            <p>безапасности</p>
+          </div>
+          <div tabIndex={1} className="block">
+            <p>календарик за</p>
+            <h2>{block[2]}.</h2>
+            <p>в подарок</p>
+          </div>
+          <div tabIndex={1} className="block">
+            <p>путешествие</p>
+            <h2>{block[3]}</h2>
+            <p>дней</p>
+          </div>
+        </section>
+      )}
     </main>
   );
 }

@@ -6,31 +6,14 @@ import { useEffect, useState } from 'react';
 
 import logo from '../../image/logo.png';
 import BurgerMenu from '../Burger-menu/BurgerMenu';
-import client from '../../sanity';
+import { getResource } from '../../api';
 
 export default function Header() {
   const [state, setState] = useState();
   const [trigger, setTrigger] = useState(false);
 
   useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "post"]{
-     title,
-     slug,
-     body,
-     mainImage{
-       asset -> {
-         _id,
-         url
-       },
-       alt
-     }
-   }`,
-      )
-      .then((response) => {
-        setState(response[0].body[0].children[0].text.split(','));
-      });
+    getResource().then((response) => setState(response[1].body[0].children[0].text.split(',')));
   }, []);
 
   function onShowMenu() {

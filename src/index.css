@@ -1,14 +1,19 @@
-@import 'http://fonts.fontstorage.com/import/museosanscyrl.css';
-
 html {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
 }
 
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('./fonts/MuseoSansCyrl300/MuseoSansCyrl300.otf'),
+    url('./fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff') format('woff'),
+    url('./fonts/MuseoSansCyrl300/MuseoSansCyrl300.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   height: 100vh;
-  font-family: 'Museo Sans Cyrl';
+  font-family: 'MuseoSansCyrl';
   font-size: 16px;
   background-color: black;
   color: aliceblue;

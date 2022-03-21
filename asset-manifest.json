@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/spaceX/static/css/main.55d8705f.css",
+    "main.css": "/spaceX/static/css/main.7073cc75.css",
     "main.js": "/spaceX/static/js/main.7b0e4264.js",
     "static/media/fon.png": "/spaceX/static/media/fon.56ef6c22e2e2dccabf69.png",
+    "static/media/MuseoSansCyrl300.otf": "/spaceX/static/media/MuseoSansCyrl300.7ad0ee61438149bf013a.otf",
+    "static/media/MuseoSansCyrl300.ttf": "/spaceX/static/media/MuseoSansCyrl300.f55cbd6c72bf488b5c7f.ttf",
+    "static/media/MuseoSansCyrl300.woff": "/spaceX/static/media/MuseoSansCyrl300.009af5051e58a1cf5c8c.woff",
     "index.html": "/spaceX/index.html",
-    "main.55d8705f.css.map": "/spaceX/static/css/main.55d8705f.css.map",
+    "main.7073cc75.css.map": "/spaceX/static/css/main.7073cc75.css.map",
     "main.7b0e4264.js.map": "/spaceX/static/js/main.7b0e4264.js.map"
   },
   "entrypoints": [
-    "static/css/main.55d8705f.css",
+    "static/css/main.7073cc75.css",
     "static/js/main.7b0e4264.js"
   ]
 }

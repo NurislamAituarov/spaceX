@@ -5,7 +5,9 @@
   "homepage": "https://nurislamaituarov.github.io/spaceX/",
   "dependencies": {
     "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/cli": "^2.30.2",
     "@sanity/client": "^3.2.2",
+    "@sanity/core": "^2.30.2",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",

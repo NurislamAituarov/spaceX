@@ -1,4 +1,11 @@
-.App {
-  max-width: 1440px;
-  margin: 60px auto;
+.container {
+  height: 100vh;
+  font-family: 'MuseoSansCyrl';
+  font-size: 16px;
+  background-color: black;
+  color: aliceblue;
+  background-image: url('../../image/fon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

@@ -11,20 +11,8 @@ html {
 }
 
 body {
-  margin: 0;
-  height: 100vh;
-  font-family: 'MuseoSansCyrl';
-  font-size: 16px;
-  background-color: black;
-  color: aliceblue;
-  background-image: url('./image/fon.png');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-#root {
-  padding: 10px 0;
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

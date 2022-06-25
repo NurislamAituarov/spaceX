@@ -59,20 +59,24 @@ li {
   padding: 20px;
 }
 
+@media (max-width: 1600px) {
+  header {
+    padding: 0 100px;
+  }
+}
+
 @media (max-width: 1368px) {
   header {
     padding: 0 20px;
+    padding-right: 50px;
   }
   li {
     margin-left: 10px;
   }
 }
-@media (max-width: 768px) {
-  .header__logo {
-    width: 250px;
-    img {
-      width: 100%;
-    }
+
+@media (max-width: 970px) {
+  header {
   }
   nav {
     display: none;
@@ -99,11 +103,21 @@ li {
     margin-bottom: 160px;
   }
 }
-@media (max-width: 378px) {
+
+@media (max-width: 768px) {
+  .header__logo {
+    width: 250px;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 415px) {
   #root {
     padding: 0;
   }
   header {
+    padding-right: 20px;
     .header__logo {
       width: 50%;
     }

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/spaceX/static/css/main.11a89594.css",
-    "main.js": "/spaceX/static/js/main.615e5a7c.js",
+    "main.css": "/spaceX/static/css/main.4ebd4fac.css",
+    "main.js": "/spaceX/static/js/main.0e0a2291.js",
     "static/media/fon.png": "/spaceX/static/media/fon.56ef6c22e2e2dccabf69.png",
     "static/media/MuseoSansCyrl300.otf": "/spaceX/static/media/MuseoSansCyrl300.7ad0ee61438149bf013a.otf",
     "static/media/MuseoSansCyrl300.ttf": "/spaceX/static/media/MuseoSansCyrl300.f55cbd6c72bf488b5c7f.ttf",
     "static/media/MuseoSansCyrl300.woff": "/spaceX/static/media/MuseoSansCyrl300.009af5051e58a1cf5c8c.woff",
     "index.html": "/spaceX/index.html",
-    "main.11a89594.css.map": "/spaceX/static/css/main.11a89594.css.map",
-    "main.615e5a7c.js.map": "/spaceX/static/js/main.615e5a7c.js.map"
+    "main.4ebd4fac.css.map": "/spaceX/static/css/main.4ebd4fac.css.map",
+    "main.0e0a2291.js.map": "/spaceX/static/js/main.0e0a2291.js.map"
   },
   "entrypoints": [
-    "static/css/main.11a89594.css",
-    "static/js/main.615e5a7c.js"
+    "static/css/main.4ebd4fac.css",
+    "static/js/main.0e0a2291.js"
   ]
 }

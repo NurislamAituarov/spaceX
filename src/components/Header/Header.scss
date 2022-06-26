@@ -54,7 +54,7 @@ li {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: -210px;
+  bottom: -170px;
   z-index: 10;
   padding: 20px;
 }
@@ -76,8 +76,6 @@ li {
 }
 
 @media (max-width: 970px) {
-  header {
-  }
   nav {
     display: none;
   }
@@ -93,14 +91,13 @@ li {
         li {
           width: max-content;
           margin: 0;
-          margin-bottom: 5px;
         }
       }
     }
   }
   .animate {
     transition: all 1s;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
   }
 }
 

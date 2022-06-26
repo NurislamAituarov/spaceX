@@ -132,7 +132,7 @@ section {
 }
 @media (max-width: 967px) {
   .main__title {
-    height: 137px;
+    height: 140px;
     h1 {
       font-size: 3rem;
     }
@@ -198,6 +198,7 @@ section {
     padding: 20px;
   }
   .main__title {
+    height: 100px;
     h1 {
       font-size: 2rem;
     }
@@ -219,7 +220,6 @@ section {
       }
       h2 {
         font-size: 37px;
-
         line-height: 38px;
       }
     }

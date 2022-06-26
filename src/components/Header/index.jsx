@@ -66,9 +66,9 @@ function NavMenu({ state }) {
         {state &&
           state.map((el, i) => {
             return (
-              <motion.div variants={variantsChildren} key={i}>
-                <li tabIndex={0}>{el}</li>
-              </motion.div>
+              <motion.li variants={variantsChildren} key={i} tabIndex={0}>
+                {el}
+              </motion.li>
             );
           })}
       </ul>

@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'MuseoSansCyrl';
   font-size: 16px;
   background-color: black;
@@ -7,5 +7,5 @@
   background-image: url('../../image/fon.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
 }
